@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #000; }
+
+.heading-primary {
+  color: #fff; }
+  .heading-primary--broken {
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    font-size: 9rem;
+    font-weight: 500;
+    letter-spacing: 2%;
+    line-height: 120%; }
+
+.heading__paragraph {
+  font-size: 1.7rem;
+  margin: 1.2rem 0 3.6rem 0;
+  color: #fff;
+  line-height: 140%; }
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #fff;
+  padding: 1.6rem 2rem;
+  border-radius: 5rem; }
+
+.btn--outline {
+  border: 1px solid #fff; }
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: url(/img/hero-img.png), linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24));
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat; }
+  .header__navigation {
+    list-style: none;
+    width: 100%; }
+    .header__navigation--item {
+      display: inline-block;
+      padding: 0 2rem;
+      font-size: 1.7rem;
+      font-weight: 500; }
+      .header__navigation--item a {
+        text-decoration: none;
+        color: #fff; }
+  .header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    padding: 5rem 4%; }
+  .header__logo {
+    position: relative;
+    height: 2.4rem;
+    cursor: pointer;
+    z-index: 2; }
+  .header .ellipse-white {
+    position: absolute;
+    z-index: 1; }
+  .header__text-box {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 35%; }
+
+.logo-cart {
+  padding: 0;
+  width: 2.5rem; }

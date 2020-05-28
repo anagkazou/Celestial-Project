@@ -1,0 +1,80 @@
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: url(/img/hero-img.png),
+    linear-gradient(rgba($color-black, 0.24), rgba($color-black, 0.24));
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  &__navigation {
+    list-style: none;
+    width: 100%;
+
+    &--item {
+      display: inline-block;
+      padding: 0 2rem;
+      font-size: $default-font-size;
+      font-weight: 500;
+
+      & a {
+        text-decoration: none;
+        color: $color-white;
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    padding: 5rem 4%;
+  }
+
+  &__logo {
+    position: relative;
+    height: 2.4rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .ellipse-white {
+    position: absolute;
+    z-index: 1;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 35%;
+  }
+
+}
+
+.logo-cart {
+  padding: 0;
+  width: 2.5rem;
+}
+
+// @media only screen and (max-width: 480px) {
+// }
+
+// @media only screen and (min-width: 700px) {
+//   .header {
+//     background-position: top;
+//   }
+// }
+// @media only screen and (max-width: 768px) {
+// }
+
+// @media only screen and (max-width: 1023px) {
+//   .header {
+//     height: 60vh;
+//     background: url(/img/header-hero.jpg);
+//     background-size: cover;
+//     background-position: fixed;
+//     background-repeat: no-repeat;
+//   }
+// }

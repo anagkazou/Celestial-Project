@@ -1,0 +1,16 @@
+.btn {
+
+    &:link,
+    &:visited {
+        text-decoration: none;
+        font-size: $default-font-size;
+        color: $color-white;
+        padding: 1.6rem 2rem;
+        border-radius: 5rem;
+    }
+
+    &--outline {
+        border: 1px solid $color-white;
+
+    }
+}
