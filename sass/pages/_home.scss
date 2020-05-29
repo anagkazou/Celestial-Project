@@ -1,0 +1,44 @@
+.section-info {
+  .features {
+    display: flex;
+    background-color: $color-grey-light-2;
+    justify-content: center;
+  }
+  .brand {
+    width: 20rem;
+    height: 9rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5rem 0;
+
+    &:not(:last-child) {
+      margin-right: 6rem;
+    }
+    &-1 {
+      background-image: url(/img/fastcompany.png);
+    }
+
+    &-2 {
+      background-image: url(/img/wired.png);
+    }
+
+    &-3 {
+      background-image: url(/img/HGTV.png);
+    }
+
+    &-4 {
+      background-image: url(/img/yahoo-lifestyle.png);
+      //height: 9rem;
+    }
+
+    &-5 {
+      background-image: url(/img/elledecorlogo.png);
+      // height: 9rem;
+    }
+
+    &-6 {
+      background-image: url(/img/Self.png);
+      // width: auto !important;
+    }
+  }
+}

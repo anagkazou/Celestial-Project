@@ -12,6 +12,13 @@ html {
 body {
   box-sizing: border-box; }
 
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -24,7 +31,7 @@ body {
   .heading-primary--broken {
     font-family: "Montserrat", sans-serif;
     display: block;
-    font-size: 9rem;
+    font-size: 7rem;
     font-weight: 500;
     letter-spacing: 2%;
     line-height: 120%; }
@@ -60,9 +67,6 @@ body {
       padding: 0 2rem;
       font-size: 1.7rem;
       font-weight: 500; }
-      .header__navigation--item a {
-        text-decoration: none;
-        color: #fff; }
   .header__wrap {
     display: flex;
     justify-content: space-between;
@@ -81,8 +85,34 @@ body {
     position: absolute;
     top: 35%;
     left: 15%;
-    width: 35%; }
+    width: 45%; }
 
 .logo-cart {
   padding: 0;
   width: 2.5rem; }
+
+.section-info .features {
+  display: flex;
+  background-color: #f4f4f4;
+  justify-content: center; }
+
+.section-info .brand {
+  width: 20rem;
+  height: 9rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5rem 0; }
+  .section-info .brand:not(:last-child) {
+    margin-right: 6rem; }
+  .section-info .brand-1 {
+    background-image: url(/img/fastcompany.png); }
+  .section-info .brand-2 {
+    background-image: url(/img/wired.png); }
+  .section-info .brand-3 {
+    background-image: url(/img/HGTV.png); }
+  .section-info .brand-4 {
+    background-image: url(/img/yahoo-lifestyle.png); }
+  .section-info .brand-5 {
+    background-image: url(/img/elledecorlogo.png); }
+  .section-info .brand-6 {
+    background-image: url(/img/Self.png); }
