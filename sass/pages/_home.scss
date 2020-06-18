@@ -1,19 +1,23 @@
-.section-info {
-  .features {
-    display: flex;
-    background-color: $color-grey-light-2;
-    justify-content: center;
-  }
+.section-features {
+  display: flex;
+  background-color: $color-black;
+  justify-content: center;
+
   .brand {
-    width: 20rem;
-    height: 9rem;
+    width: 16rem;
+    height: 6rem;
     background-repeat: no-repeat;
-    background-size: cover;
-    margin: 5rem 0;
+    background-size: contain;
+    margin: 3rem 0;
+
+    &:first-child {
+      margin-left: 6rem;
+    }
 
     &:not(:last-child) {
       margin-right: 6rem;
     }
+
     &-1 {
       background-image: url(/img/fastcompany.png);
     }
@@ -39,6 +43,213 @@
     &-6 {
       background-image: url(/img/Self.png);
       // width: auto !important;
+    }
+  }
+}
+.section-hero {
+  .hero {
+    &-grid {
+      display: grid;
+      max-width: 100vw;
+      height: auto;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+
+      grid-auto-flow: dense;
+      margin-bottom: 4rem;
+      @include respond(phone) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .left {
+      position: relative;
+      background-color: $color-black;
+    }
+    &--text {
+      background-color: $color-black;
+      position: relative;
+      width: 100%;
+      height: 85vh;
+      @include respond(tab-land) {
+        height: 70rem;
+      }
+      @include respond(phone) {
+        height: 90rem;
+      }
+
+      &-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+
+        .btn--outline {
+          margin-left: 2rem;
+        }
+      }
+    }
+    &--image {
+      background-image: url("../img/hero-image.png");
+      background-size: cover;
+      width: 100%;
+      height: 85vh;
+      @include respond(tab-land) {
+        height: 70rem;
+      }
+      @include respond(phone) {
+        display: none;
+      }
+    }
+  }
+}
+
+// .section-living,
+// .section-lights {
+//   .featured {
+//     font-family: "Poppins", sans-serif;
+
+//     display: inline-block;
+//     font-size: $small-font-size;
+
+//     &--link {
+//       border-bottom: 1px solid $color-black;
+
+//     }
+//   }
+// }
+.featured {
+  color: $color-black;
+  font-size: $text-link-font-size;
+}
+.featured--link {
+  color: $color-brown;
+
+  border-bottom: 1px solid $color-brown;
+}
+.section-info {
+  background: $color-white;
+  max-width: 100vw;
+  padding: 18rem 0;
+
+  .info-img {
+    width: 100%;
+    //height: 100%;
+    // background-image: url("../img/ingrid-chair.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .info-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, 25%);
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 1rem;
+
+    font-weight: 300;
+    @include respond(tab-port) {
+      transform: translate(-50%, 10%);
+    }
+    @media only screen and (max-width: 48.75em) {
+      width: 96%;
+      transform: translate(-50%, 9%);
+    }
+    @include respond(phone) {
+      position: unset;
+      transform: none;
+      margin-top: 8rem;
+      width: 100%;
+    }
+
+    &__paragraph {
+      font-size: 2.4rem;
+      color: $color-black;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .asset-dot {
+    position: absolute;
+    top: 25%;
+    left: -6%;
+    z-index: 1;
+    width: 4.5rem;
+    @include respond(phone) {
+      width: 7.5rem;
+    }
+  }
+}
+
+.section-living,
+.section-lights {
+  .intro {
+    background-color: $color-black;
+    color: $color-white;
+    text-align: center;
+
+    &-text {
+      font-size: $paragraph-font-size;
+      font-weight: 300;
+      margin: 1.2rem 0;
+      line-height: 150%;
+    }
+  }
+
+  .featured {
+    color: $color-white;
+    // font-size: $text-link-font-size;
+  }
+  .featured--link {
+    color: $color-brown;
+    border-bottom: 1px solid $color-brown !important;
+  }
+  .outer-wrap {
+    padding: 10rem 15vw;
+    @include respond(tab-port) {
+      padding: 10rem 7vw;
+    }
+  }
+}
+
+.section-services {
+  padding: 8rem 0;
+  background-color: $color-white;
+  .service {
+    display: block;
+
+    &__img {
+      display: block;
+
+      text-align: center;
+      width: 80px;
+      height: 80px;
+      margin-left: auto;
+      margin-right: auto;
+      background-size: contain;
+      background-position: 50%;
+      background-repeat: no-repeat;
+
+      &-1 {
+        background-image: url(/img/shipping.png);
+      }
+
+      &-2 {
+        background-image: url(/img/returns.png);
+      }
+      &-3 {
+        background-image: url(/img/guarantee.png);
+      }
+    }
+
+    &__text {
+      text-align: center;
+      font-weight: 400;
+      margin-top: 20px;
     }
   }
 }

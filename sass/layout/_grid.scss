@@ -1,5 +1,71 @@
-.row {
-    max-width: $grid-width;
-    margin: 0 auto;
+.container {
+  padding: 0 4%;
+}
 
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  @include clearfix;
+  @include respond(tab-land) {
+    padding: 0 3rem;
+  }
+  @include respond(phone) {
+    // width: 100vw;
+  }
+}
+
+div[class*="col"] {
+}
+
+.col-60 {
+  float: left;
+  width: 60%;
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
+.col-40 {
+  float: left;
+  width: 40%;
+  height: 100%;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
+.col-50 {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.span-1-of-3 {
+  width: 32.26%;
+  @include respond(phone) {
+    width: 100%;
+    margin: 4rem 0;
+  }
+}
+
+.span-1-of-5 {
+  width: 18.72%;
+  @include respond(phone) {
+    width: 100%;
+  }
 }

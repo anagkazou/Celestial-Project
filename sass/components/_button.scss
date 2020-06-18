@@ -1,16 +1,31 @@
 .btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: $color-white;
+    padding: 1.4rem 2rem;
+  }
 
-    &:link,
-    &:visited {
-        text-decoration: none;
-        font-size: $default-font-size;
-        color: $color-white;
-        padding: 1.6rem 2rem;
-        border-radius: 5rem;
-    }
+  &--filled {
+    background-color: $color-brown;
+  }
 
-    &--outline {
-        border: 1px solid $color-white;
+  &--outline {
+    border: 1px solid $color-brown;
+    color: $color-brown !important;
+  }
 
-    }
+  &--submit {
+    border-radius: 50%;
+    background-image: url("/img/arrow-right.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: $color-brown;
+    border: none;
+    cursor: pointer;
+  }
 }

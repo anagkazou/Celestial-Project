@@ -1,4 +1,7 @@
 $default-font-size: 1.7rem;
+$text-link-font-size: 1.3rem;
+$small-font-size: 1.4rem;
+$paragraph-font-size: 2.4rem;
 
 $color-grey-dark: #777;
 $color-grey-dark-2: #999;
@@ -6,9 +9,12 @@ $color-grey-dark-2: #999;
 $color-grey-light: #f7f7f7;
 $color-grey-light-2: #f4f4f4;
 
-$color-white: #fff;
+$color-white: #fcfcfc;
 $color-black: #000;
 
+$color-brown: #9f6934;
+$color-brown-dark: #6c3601;
+$color-brown-light: rgba(#9f6934, 0.26);
 
 //GRID
-$grid-width:114rem;
+$grid-width: 114rem;

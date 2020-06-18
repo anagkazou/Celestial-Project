@@ -1,58 +1,64 @@
 .header {
-  position: relative;
-  height: 100vh;
-  background-image: url(/img/hero-img.png),
-    linear-gradient(rgba($color-black, 0.24), rgba($color-black, 0.24));
+  max-width: 100vw;
+  //background-image: url(/img/hero-img.png),
+  // linear-gradient(rgba($color-black, 0.4), rgba($color-black, 0.4));
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  &__navigation {
+    height: 15vh;
+    width: 100vw;
+    @include respond(tab-land) {
+      height: 10vh;
+    }
+    // justify-content: space-between;
+    // align-items: center;
+    &--left,
+    &--right {
+      display: flex;
+      height: 100%;
+    }
 
+    &--left {
+      background-color: $color-black;
+      padding-left: 4%;
+    }
+
+    &--right {
+      background-color: $color-white;
+
+      padding-right: 4%;
+    }
+    &--links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      justify-self: end;
+      width: 100%;
+    }
+    &--item {
+      display: flex;
+      padding: 0 2rem;
+      font-size: $small-font-size;
+      font-weight: 500;
+    }
+  }
   &__navigation {
     list-style: none;
     width: 100%;
-
-    &--item {
-      display: inline-block;
-      padding: 0 2rem;
-      font-size: $default-font-size;
-      font-weight: 500;
-
-
-    }
-  }
-
-  &__wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10rem;
-    padding: 5rem 4%;
   }
 
   &__logo {
     position: relative;
-    height: 2.4rem;
+    height: 2rem;
     cursor: pointer;
-    z-index: 2;
   }
-
-  .ellipse-white {
-    position: absolute;
-    z-index: 1;
-  }
-
-  &__text-box {
-    position: absolute;
-    top: 35%;
-    left: 15%;
-    width: 45%;
-  }
-
 }
 
-.logo-cart {
-  padding: 0;
-  width: 2.5rem;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // @media only screen and (max-width: 480px) {

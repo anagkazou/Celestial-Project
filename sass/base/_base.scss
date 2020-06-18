@@ -5,10 +5,26 @@
   padding: 0;
   box-sizing: inherit;
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
 html {
   //Base definition of 1rem
   font-size: 62.5%;
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+  @include respond(small-phone) {
+    font-size: 30%;
+  }
 }
 
 body {
@@ -21,5 +37,5 @@ ul {
 
 a {
   text-decoration: none;
-  color: $color-white;
+  color: inherit;
 }

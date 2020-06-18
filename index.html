@@ -8,37 +8,29 @@
   </head>
   <body>
     <header class="header">
-      <div class="ellipse-white">
-        <img src="/img/asset-ellipse-white.png" alt="ellipse-white" />
-      </div>
-      <div class="header__wrap">
-        <a href="#"><img src="/img/logo.png" alt="" class="header__logo" /></a>
-
-        <nav>
-          <ul class="header__navigation">
-            <li class="header__navigation--item"><a href="#">Living</a></li>
-            <li class="header__navigation--item"><a href="#">Lights</a></li>
-            <li class="header__navigation--item"><a href="#">Designer</a></li>
-          </ul>
-        </nav>
-
-        <nav>
-          <ul class="header__navigation">
+      <nav class="header__navigation">
+        <div class="col-50 header__navigation--left">
+          <a href="#" style="float: left;" class="logo"
+            ><img src="/img/logo.png" alt="" class="header__logo"
+          /></a>
+        </div>
+        <div class="col-50 header__navigation--right">
+          <ul class="header__navigation--links">
             <li class="header__navigation--item"><a href="#">Help</a></li>
             <li class="header__navigation--item"><a href="#">Account</a></li>
             <li class="header__navigation--item">
-              <a href="#"
-                ><img
-                  src="/img/cart-icon.png"
-                  alt="logo cart"
-                  class="logo-cart"
-              /></a>
+              <a href="#">
+                <div class="hamburger-menu">
+                  <span></span> <span></span>
+                  <span></span>
+                </div>
+              </a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
 
-      <div class="header__text-box">
+      <!-- <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--broken">Timeless &</span>
           <span class="heading-primary--broken">Exotic Designs</span>
@@ -48,11 +40,32 @@
           Amet, illo.
         </p>
         <a href="#" class="btn btn--outline btn--animated">Shop Now</a>
-      </div>
+      </div> -->
     </header>
 
     <main>
-      <section class="section-info">
+      <section class="section-hero">
+        <div class="hero-grid">
+          <div class="side left">
+            <div class="hero--text">
+              <div class="hero--text-box">
+                <h1 class="heading-primary">
+                  We are <strong>Celestial</strong>, we design and manufacture
+                  furniture fit for gods.
+                </h1>
+                <a href="#" class="btn btn--filled btn--animated">Shop Now</a>
+                <a href="#" class="btn btn--outline btn--animated">About Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero right">
+            <div class="hero--image">
+              <!-- <img src="img/hero-image.png" alt="" class="hero-image" /> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="section-features">
         <ul class="features">
           <li class="brand brand-1"></li>
           <li class="brand brand-2"></li>
@@ -61,7 +74,576 @@
           <li class="brand brand-5"></li>
           <li class="brand brand-6"></li>
         </ul>
+
+      </section> -->
+
+      <section class="section-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-40" style="position: relative;">
+              <img src="/img/dot-black.png" alt="" class="asset-dot" />
+              <img src="/img/Ingrid-chair.png" alt="" class="info-img" />
+              <!-- <div class="info-img"></div> -->
+            </div>
+            <div class="col-60" style="position: relative;">
+              <div class="info-text">
+                <p class="info-text__paragraph">
+                  We are a collaboration of emerging and iconic designers and
+                  makers. Each object was designed to bring quality and style to
+                  your everyday rituals.
+                  <br />
+                  <br />
+                  We are
+                  <span class="info-text__sub"
+                    ><strong>Celestial.</strong>
+                  </span>
+                </p>
+
+                <p href="#" class="featured">
+                  Featuring
+                  <span
+                    ><a class="featured--link" href="#">Ingrid Chair</a></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <section class="section-living">
+        <div class="intro">
+          <div class="container">
+            <div class="outer-wrap">
+              <h2 class="heading-secondary u-center-text">
+                Celestial Living
+              </h2>
+              <p class="intro-text">
+                Take time for life’s little moments. Browsing the news as you
+                eat breakfast. Setting the table for hungry guests. Sinking in
+                to your favourite armchair. At Celestial, we make furniture to
+                give you your best day, every day. Your daily rituals are at the
+                heart of our design.
+              </p>
+              <br />
+              <div href="#" class="featured">
+                Learn more
+                <a href="#" class="featured--link"> About us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="masonry">
+          <figure class="product large-column">
+            <img class="product__img" src="/img/1.jpg" alt="" />
+
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Grand cherry</strong>
+                </p>
+                <p class="product__details--sec">Sofa</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+
+          <figure class="product">
+            <img class="product__img" src="/img/2.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div href="" class="place-center">
+                <p class="product__details--primary">
+                  <strong>Rinura</strong>
+                </p>
+                <p class="product__details--sec">Dining chair</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+
+          <figure class="product">
+            <img class="product__img" src="/img/3.jpg" alt="" />
+            <a class="product__details" href="#">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Inlay</strong>
+                </p>
+                <p class="product__details--sec">Dining chair</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+
+          <figure class="product large-row">
+            <img class="product__img" src="/img/4.jpg" alt="" />
+            <a href="" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Unquad</strong>
+                </p>
+                <p class="product__details--sec">Dining chair</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+
+          <figure class="product">
+            <img class="product__img" src="/img/5.jpg" alt="" />
+            <a href="" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Pafa</strong>
+                </p>
+                <p class="product__details--sec">Scatter Cushion</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product large-column">
+            <img class="product__img" src="/img/6.jpg" alt="" />
+            <a href="" class="product__details">
+              <div href="" class="place-center">
+                <p class="product__details--primary">
+                  <strong>Nupal</strong>
+                </p>
+                <p class="product__details--sec">Sofa</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product large-column">
+            <img class="product__img" src="/img/7.jpg" alt="" />
+            <a class="product__details" href="#">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Mortocello</strong>
+                </p>
+                <p class="product__details--sec">Sofa (Wood base)</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product">
+            <img class="product__img" src="/img/8.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Reubon</strong>
+                </p>
+                <p class="product__details--sec">Desk</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product large-column">
+            <img class="product__img" src="/img/9.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Forte</strong>
+                </p>
+                <p class="product__details--sec">Coffee Table</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product">
+            <img class="product__img" src="/img/10.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Doobi</strong>
+                </p>
+                <p class="product__details--sec">Coffee Table</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product">
+            <img class="product__img" src="/img/11.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Gallan</strong>
+                </p>
+                <p class="product__details--sec">Dining Chair</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-lights">
+        <div class="intro">
+          <div class="container">
+            <div class="outer-wrap">
+              <h2 class="heading-secondary u-center-text">
+                Celestial Lights
+              </h2>
+              <p class="intro-text">
+                Take time for life’s little moments. Browsing the news as you
+                eat breakfast. Setting the table for hungry guests. Sinking in
+                to your favourite armchair. At Celestial, we make furniture to
+                give you your best day, every day. Your daily rituals are at the
+                heart of our design.
+              </p>
+              <p class="text-sub">
+                <span></span>
+              </p>
+
+              <br />
+              <div href="#" class="featured">
+                Learn more
+                <a href="#" class="featured--link"> About us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry">
+          <figure class="product">
+            <img class="product__img" src="/img/12.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Aliela</strong>
+                </p>
+                <p class="product__details--sec">Wall Lamp</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+
+          <figure class="product">
+            <img class="product__img" src="/img/13.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Arola</strong>
+                </p>
+                <p class="product__details--sec">Wall Lamp</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product">
+            <img class="product__img" src="/img/14.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Fluvia</strong>
+                </p>
+                <p class="product__details--sec">Pendant Lamp</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product large-row">
+            <img class="product__img" src="/img/15.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Manana</strong>
+                </p>
+                <p class="product__details--sec">Pendant Lamp</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product">
+            <img class="product__img" src="/img/16.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Kleine</strong>
+                </p>
+                <p class="product__details--sec">Table Lamp</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product">
+            <img class="product__img" src="/img/17.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Enna</strong>
+                </p>
+                <p class="product__details--sec">Pendant Lamp</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product large-row">
+            <img class="product__img" src="/img/18.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Mothe</strong>
+                </p>
+                <p class="product__details--sec">Table Lamp</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product">
+            <img class="product__img" src="/img/19.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Flos</strong>
+                </p>
+                <p class="product__details--sec">Wall Lamp</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product large-row">
+            <img class="product__img" src="/img/20.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Seletti</strong>
+                </p>
+                <p class="product__details--sec">Pendant Lamp</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product">
+            <img class="product__img" src="/img/21.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Estelle</strong>
+                </p>
+                <p class="product__details--sec">Ceiling Lamp</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product">
+            <img class="product__img" src="/img/22.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Pedroc</strong>
+                </p>
+                <p class="product__details--sec">Table Lamp</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product">
+            <img class="product__img" src="/img/23.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Kathryn</strong>
+                </p>
+                <p class="product__details--sec">Wall Lamp</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+          <figure class="product">
+            <img class="product__img" src="/img/24.jpg" alt="" />
+            <a href="#" class="product__details">
+              <div class="place-center">
+                <p class="product__details--primary">
+                  <strong>Abisa</strong>
+                </p>
+                <p class="product__details--sec">Wall Lamp</p>
+                <img
+                  class="product-arrow"
+                  src="/svg/product-arrow.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-services">
+        <div class="container">
+          <div class="row">
+            <div class="col span-1-of-3">
+              <div class="service">
+                <div class="service__img service__img-1"></div>
+                <p class="service__text">Free standard shipping</p>
+              </div>
+            </div>
+            <div class="col span-1-of-3">
+              <div class="service">
+                <div alt="" class="service__img service__img-2"></div>
+
+                <p class="service__text">30-day simple returns</p>
+              </div>
+            </div>
+            <div class="col span-1-of-3">
+              <div class="service">
+                <div class="service__img service__img-3"></div>
+                <p class="service__text">365-day quality guarantee</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <h2 class="heading-secondary">
+            Get inspired.
+          </h2>
+          <form action="" class="form">
+            <input type="text" placeholder="Email" type="email" class="input" />
+            <button class="btn--submit"></button>
+          </form>
+        </div>
+
+        <div class="row">
+          <div class="footer__links--row">
+            <div class="col span-1-of-5">
+              <ul class="footer__links">
+                <li class="footer__links--title">Celestial.</li>
+                <li class="footer__links--item">&copy;David Omole 2020</li>
+              </ul>
+            </div>
+            <div class="col span-1-of-5">
+              <ul class="footer__links">
+                <li class="footer__links--title">Shopping</li>
+                <li class="footer__links--item">
+                  <a href="#">Table Lights</a>
+                </li>
+                <li class="footer__links--item"><a href="#">Designers</a></li>
+                <li class="footer__links--item"><a href="#">Refer</a></li>
+                <li class="footer__links--item"><a href="#">Cart</a></li>
+              </ul>
+            </div>
+            <div class="col span-1-of-5">
+              <ul class="footer__links">
+                <li class="footer__links--title">About</li>
+                <li class="footer__links--item"><a href="#">Our Story</a></li>
+                <li class="footer__links--item"><a href="#">Materials</a></li>
+                <li class="footer__links--item"><a href="#">Factory</a></li>
+                <li class="footer__links--item"><a href="#">Create</a></li>
+              </ul>
+            </div>
+            <div class="col span-1-of-5">
+              <ul class="footer__links">
+                <li class="footer__links--title">Connect</li>
+                <li class="footer__links--item"><a href="#">Facebook</a></li>
+                <li class="footer__links--item"><a href="#">Instagram</a></li>
+                <li class="footer__links--item"><a href="#">Twitter</a></li>
+                <li class="footer__links--item"><a href="#">Pintrest</a></li>
+              </ul>
+            </div>
+            <div class="col span-1-of-5">
+              <ul class="footer__links">
+                <li class="footer__links--title">Contact</li>
+                <li class="footer__links--item">+234 703 696 4051</li>
+                <li class="footer__links--item">
+                  22, Lorem ipsum, Lagos, Nigeria
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

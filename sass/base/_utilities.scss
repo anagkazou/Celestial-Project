@@ -1,0 +1,74 @@
+.u-center-text {
+  text-align: center;
+}
+
+.place-center {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: inherit;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem;
+}
+
+.u-margin-top-large {
+  margin-top: 8rem;
+}
+
+.u-margin-large {
+  margin: 8rem;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem;
+}
+
+.u-my-huge {
+  margin: 10rem 0;
+}
+
+//Padding Utilities
+.u-padding-bottom-small {
+  padding-bottom: 1.5rem;
+}
+
+.u-padding-bottom-medium {
+  padding-bottom: 4rem;
+}
+
+.u-padding-bottom-large {
+  padding-bottom: 8rem;
+}
+
+.u-padding-top-large {
+  padding-top: 8rem;
+}
+
+.u-paddingx-large {
+  padding: 0 6rem;
+}
+
+.u-padding-top-huge {
+  padding-top: 10rem;
+}
+
+//Font color
+.text-white {
+  color: $color-white;
+}
+
+//Positioning
+.u-my-auto {
+}

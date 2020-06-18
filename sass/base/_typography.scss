@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap");
+//@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
 
 body {
   font-family: "Poppins", sans-serif;
@@ -7,26 +8,33 @@ body {
   line-height: 1.7;
   color: $color-black;
 }
-
+strong {
+  font-weight: 500;
+}
 .heading {
   &-primary {
     color: $color-white;
 
-    &--broken {
-      font-family: "Montserrat", sans-serif;
-
-      display: block;
-      font-size: 7rem;
-      font-weight: 500;
-      letter-spacing: 2%;
-      line-height: 120%;
-    }
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: 2%;
+    line-height: 135%;
+    margin-bottom: 3rem;
   }
 
   &__paragraph {
-    font-size: $default-font-size;
-    margin: 1.2rem 0 3.6rem 0;
+    font-size: $small-font-size;
+    margin: 1.2rem 0 4.6rem 0;
     color: $color-white;
     line-height: 140%;
+  }
+
+  &-secondary {
+    font-size: 3.6rem;
+    font-weight: 500;
+    text-align: center;
+    @include respond(phone) {
+      text-align: left;
+    }
   }
 }
