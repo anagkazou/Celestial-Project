@@ -19,29 +19,29 @@
     }
 
     &-1 {
-      background-image: url(/img/fastcompany.png);
+      background-image: url(../img/fastcompany.png);
     }
 
     &-2 {
-      background-image: url(/img/wired.png);
+      background-image: url(../img/wired.png);
     }
 
     &-3 {
-      background-image: url(/img/HGTV.png);
+      background-image: url(../img/HGTV.png);
     }
 
     &-4 {
-      background-image: url(/img/yahoo-lifestyle.png);
+      background-image: url(../img/yahoo-lifestyle.png);
       //height: 9rem;
     }
 
     &-5 {
-      background-image: url(/img/elledecorlogo.png);
+      background-image: url(../img/elledecorlogo.png);
       // height: 9rem;
     }
 
     &-6 {
-      background-image: url(/img/Self.png);
+      background-image: url(../img/Self.png);
       // width: auto !important;
     }
   }
@@ -91,7 +91,7 @@
       }
     }
     &--image {
-      background-image: url("../img/hero-image.png");
+      background-image: url("..../img/hero-image.png");
       background-size: cover;
       width: 100%;
       height: 85vh;
@@ -136,7 +136,7 @@
   .info-img {
     width: 100%;
     //height: 100%;
-    // background-image: url("../img/ingrid-chair.png");
+    // background-image: url("..../img/ingrid-chair.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -235,14 +235,14 @@
       background-repeat: no-repeat;
 
       &-1 {
-        background-image: url(/img/shipping.png);
+        background-image: url("../img/shipping.png");
       }
 
       &-2 {
-        background-image: url(/img/returns.png);
+        background-image: url("../img/returns.png");
       }
       &-3 {
-        background-image: url(/img/guarantee.png);
+        background-image: url("../img/guarantee.png");
       }
     }
 
