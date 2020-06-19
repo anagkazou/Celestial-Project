@@ -32,9 +32,6 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 30em) {
-    html {
-      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
