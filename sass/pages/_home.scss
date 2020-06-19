@@ -76,7 +76,7 @@
         height: 70rem;
       }
       @include respond(phone) {
-        height: 80rem;
+        height: 75rem;
       }
 
       &-box {
@@ -85,7 +85,9 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 70%;
-
+        @include respond(phone) {
+          width: 80%;
+        }
         .btn--outline {
           margin-left: 2rem;
         }
@@ -161,6 +163,7 @@
       transform: none;
       margin-top: 8rem;
       width: 100%;
+      margin-left: 0;
     }
 
     &__paragraph {

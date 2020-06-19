@@ -74,7 +74,7 @@ strong {
   letter-spacing: 2%;
   line-height: 135%;
   margin-bottom: 3rem;
-  animation: moveInBottom 0.5s ease; }
+  animation: moveInBottom 1s ease; }
 
 .heading__paragraph {
   font-size: 1.5rem;
@@ -227,7 +227,7 @@ strong {
       .footer .form {
         margin: 30px 0; } }
     .footer .form .input {
-      width: 35rem;
+      width: 30rem;
       transform: translateY(35%);
       background-color: transparent;
       border: none;
@@ -244,10 +244,11 @@ strong {
   .footer__links--row {
     margin-top: 3rem; }
   .footer__links--title {
-    font-weight: 400; }
+    font-weight: 500;
+    color: #777; }
   .footer__links--item {
     color: #f7f7f7;
-    font-weight: 200; }
+    font-weight: 300; }
     @media only screen and (max-width: 37.5em) {
       .footer__links--item {
         display: inline-block;
@@ -311,7 +312,7 @@ strong {
   @media only screen and (max-width: 37.5em) {
     .span-1-of-5 {
       width: 100%;
-      margin: 0.8rem 0; } }
+      margin: 2rem 0; } }
 
 .header {
   max-width: 100vw;
@@ -479,13 +480,16 @@ strong {
       height: 70rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-hero .hero--text {
-      height: 80rem; } }
+      height: 75rem; } }
   .section-hero .hero--text-box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%; }
+    @media only screen and (max-width: 37.5em) {
+      .section-hero .hero--text-box {
+        width: 80%; } }
     .section-hero .hero--text-box .btn--outline {
       margin-left: 2rem; }
 
@@ -526,8 +530,7 @@ strong {
   .section-info .info-img {
     width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
-    animation: fadeReveal 2s ease; }
+    background-size: cover; }
   .section-info .info-text {
     position: absolute;
     top: 50%;
@@ -550,7 +553,8 @@ strong {
         position: unset;
         transform: none;
         margin-top: 8rem;
-        width: 100%; } }
+        width: 100%;
+        margin-left: 0; } }
     .section-info .info-text__paragraph {
       font-size: 2.4rem;
       color: #000;
