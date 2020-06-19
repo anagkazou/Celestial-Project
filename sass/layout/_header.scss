@@ -28,6 +28,9 @@
       background-color: $color-white;
 
       padding-right: 4%;
+      @include respond(phone) {
+        padding-right: 1.5%;
+      }
     }
     &--links {
       display: flex;

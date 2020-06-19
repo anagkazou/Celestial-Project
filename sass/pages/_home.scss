@@ -56,7 +56,7 @@
       grid-template-columns: 1fr 1fr;
 
       grid-auto-flow: dense;
-      margin-bottom: 4rem;
+
       @include respond(phone) {
         grid-template-columns: 1fr;
       }
@@ -73,9 +73,6 @@
       height: 85vh;
       @include respond(tab-land) {
         height: 70rem;
-      }
-      @include respond(phone) {
-        height: 80rem;
       }
 
       &-box {
@@ -105,20 +102,6 @@
   }
 }
 
-// .section-living,
-// .section-lights {
-//   .featured {
-//     font-family: "Poppins", sans-serif;
-
-//     display: inline-block;
-//     font-size: $small-font-size;
-
-//     &--link {
-//       border-bottom: 1px solid $color-black;
-
-//     }
-//   }
-// }
 .featured {
   color: $color-black;
   font-size: $text-link-font-size;
@@ -132,7 +115,15 @@
   background: $color-white;
   max-width: 100vw;
   padding: 18rem 0;
-
+  @include respond(tab-land) {
+    padding: 14rem 0;
+  }
+  @include respond(tab-port) {
+    padding: 12rem 0;
+  }
+  @include respond(phone) {
+    padding: 8rem 0;
+  }
   .info-img {
     width: 100%;
     //height: 100%;
@@ -179,8 +170,11 @@
     left: -6%;
     z-index: 1;
     width: 4.5rem;
+    @include respond(tab-port) {
+      width: 3.5rem;
+    }
     @include respond(phone) {
-      width: 7.5rem;
+      width: 4.5rem;
     }
   }
 }
@@ -226,8 +220,8 @@
       display: block;
 
       text-align: center;
-      width: 80px;
-      height: 80px;
+      width: 8rem;
+      height: 8rem;
       margin-left: auto;
       margin-right: auto;
       background-size: contain;

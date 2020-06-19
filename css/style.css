@@ -65,7 +65,7 @@ strong {
   margin-bottom: 3rem; }
 
 .heading__paragraph {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin: 1.2rem 0 4.6rem 0;
   color: #fcfcfc;
   line-height: 140%; }
@@ -311,6 +311,9 @@ strong {
     .header__navigation--right {
       background-color: #fcfcfc;
       padding-right: 4%; }
+      @media only screen and (max-width: 37.5em) {
+        .header__navigation--right {
+          padding-right: 1.5%; } }
     .header__navigation--links {
       display: flex;
       justify-content: flex-end;
@@ -320,7 +323,7 @@ strong {
     .header__navigation--item {
       display: flex;
       padding: 0 2rem;
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       font-weight: 500; }
   .header__navigation {
     list-style: none;
@@ -430,8 +433,7 @@ strong {
   height: auto;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-auto-flow: dense;
-  margin-bottom: 4rem; }
+  grid-auto-flow: dense; }
   @media only screen and (max-width: 37.5em) {
     .section-hero .hero-grid {
       grid-template-columns: 1fr; } }
@@ -448,9 +450,6 @@ strong {
   @media only screen and (max-width: 75em) {
     .section-hero .hero--text {
       height: 70rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .section-hero .hero--text {
-      height: 80rem; } }
   .section-hero .hero--text-box {
     position: absolute;
     top: 50%;
@@ -484,6 +483,15 @@ strong {
   background: #fcfcfc;
   max-width: 100vw;
   padding: 18rem 0; }
+  @media only screen and (max-width: 75em) {
+    .section-info {
+      padding: 14rem 0; } }
+  @media only screen and (max-width: 56.25em) {
+    .section-info {
+      padding: 12rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-info {
+      padding: 8rem 0; } }
   .section-info .info-img {
     width: 100%;
     background-repeat: no-repeat;
@@ -521,9 +529,12 @@ strong {
     left: -6%;
     z-index: 1;
     width: 4.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .section-info .asset-dot {
+        width: 3.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .section-info .asset-dot {
-        width: 7.5rem; } }
+        width: 4.5rem; } }
 
 .section-living .intro,
 .section-lights .intro {
@@ -562,8 +573,8 @@ strong {
     .section-services .service__img {
       display: block;
       text-align: center;
-      width: 80px;
-      height: 80px;
+      width: 8rem;
+      height: 8rem;
       margin-left: auto;
       margin-right: auto;
       background-size: contain;
