@@ -70,6 +70,6 @@ div[class*="col"] {
   width: 18.72%;
   @include respond(phone) {
     width: 100%;
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
 }
