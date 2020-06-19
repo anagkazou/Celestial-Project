@@ -75,6 +75,9 @@
       @include respond(tab-land) {
         height: 70rem;
       }
+      @include respond(phone) {
+        height: 80rem;
+      }
 
       &-box {
         position: absolute;
