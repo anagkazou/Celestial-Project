@@ -310,7 +310,8 @@ strong {
   width: 18.72%; }
   @media only screen and (max-width: 37.5em) {
     .span-1-of-5 {
-      width: 100%; } }
+      width: 100%;
+      margin: 0.8rem 0; } }
 
 .header {
   max-width: 100vw;
