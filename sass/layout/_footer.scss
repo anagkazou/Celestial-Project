@@ -2,7 +2,9 @@
   background-color: $color-black;
   color: $color-white;
   padding: 10rem 0;
-
+  @include respond(phone) {
+    padding: 12rem 0;
+  }
   .form {
     width: fit-content;
     margin-bottom: 5px;
