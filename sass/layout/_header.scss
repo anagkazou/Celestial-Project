@@ -30,6 +30,7 @@
       padding-right: 4%;
       @include respond(phone) {
         padding-right: 1.5%;
+        padding-left: 0.5%;
       }
     }
     &--links {
@@ -44,6 +45,10 @@
       padding: 0 2rem;
       font-size: $small-font-size;
       font-weight: 500;
+      @include respond(phone) {
+        padding: 0 1.2rem;
+        font-size: 1.2rem;
+      }
     }
   }
   &__navigation {
