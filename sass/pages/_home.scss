@@ -135,7 +135,6 @@
     // background-image: url("..../img/ingrid-chair.png");
     background-repeat: no-repeat;
     background-size: cover;
-    animation: fadeReveal 2s ease;
   }
 
   .info-text {
@@ -149,7 +148,6 @@
     margin-left: 1rem;
 
     font-weight: 300;
-    //animation: moveInBottom 2s ease;
 
     @include respond(tab-port) {
       transform: translate(-50%, 10%);
