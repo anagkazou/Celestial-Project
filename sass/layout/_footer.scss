@@ -25,7 +25,7 @@
       height: 24px;
       color: $color-white;
       @include respond(phone) {
-        width: 25rem;
+        width: 35rem;
       }
       //color: $color-black;
       &:focus {
@@ -37,9 +37,12 @@
     &--row {
       margin-top: 3rem;
     }
-
+    &--title {
+      font-weight: 400;
+    }
     &--item {
-      color: $color-grey-dark;
+      color: $color-grey-light;
+      font-weight: 200;
 
       @include respond(phone) {
         display: inline-block;

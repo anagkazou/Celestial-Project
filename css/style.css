@@ -74,7 +74,7 @@ strong {
   letter-spacing: 2%;
   line-height: 135%;
   margin-bottom: 3rem;
-  animation: moveInBottom 1s ease-in; }
+  animation: moveInBottom 0.5s ease; }
 
 .heading__paragraph {
   font-size: 1.5rem;
@@ -216,6 +216,9 @@ strong {
   background-color: #000;
   color: #fcfcfc;
   padding: 10rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      padding: 12rem 0; } }
   .footer .form {
     width: fit-content;
     margin-bottom: 5px;
@@ -235,13 +238,16 @@ strong {
       color: #fcfcfc; }
       @media only screen and (max-width: 37.5em) {
         .footer .form .input {
-          width: 25rem; } }
+          width: 35rem; } }
       .footer .form .input:focus {
         outline: none; }
   .footer__links--row {
     margin-top: 3rem; }
+  .footer__links--title {
+    font-weight: 400; }
   .footer__links--item {
-    color: #777; }
+    color: #f7f7f7;
+    font-weight: 200; }
     @media only screen and (max-width: 37.5em) {
       .footer__links--item {
         display: inline-block;
@@ -470,6 +476,9 @@ strong {
   @media only screen and (max-width: 75em) {
     .section-hero .hero--text {
       height: 70rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-hero .hero--text {
+      height: 80rem; } }
   .section-hero .hero--text-box {
     position: absolute;
     top: 50%;
