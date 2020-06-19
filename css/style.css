@@ -450,7 +450,7 @@ strong {
       height: 70rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-hero .hero--text {
-      height: 90rem; } }
+      height: 80rem; } }
   .section-hero .hero--text-box {
     position: absolute;
     top: 50%;
