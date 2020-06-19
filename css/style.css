@@ -274,6 +274,9 @@ strong {
     margin-left: 0; }
   .col:last-child {
     margin-right: 0; }
+  @media only screen and (max-width: 37.5em) {
+    .col {
+      margin-left: 0; } }
 
 .span-1-of-3 {
   width: 32.26%; }
