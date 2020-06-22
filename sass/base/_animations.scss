@@ -19,3 +19,12 @@
     opacity: 1;
   }
 }
+
+@keyframes menu-hover {
+  60% {
+    transform: scaleX(1.4);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

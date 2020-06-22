@@ -1,57 +1,95 @@
-.hamburger-menu {
-  display: flex;
-  margin: auto;
-  position: relative;
-  width: 30%;
-  height: 3vh;
-  padding: 12px 10px;
-  justify-content: flex-end;
-
-  span {
-    display: block;
-    position: absolute;
-    height: 2px;
-    background-color: $color-black;
-    width: 100%;
-    border-radius: 4px;
-    transform: translate(-50%, -50%);
-  }
-  span:first-child {
-    top: 5px;
-    transform: scaleX(1);
-    opacity: 1;
-  }
-  span:nth-child(2) {
-    top: 11px;
-    transform: scaleX(1);
-    opacity: 1;
-  }
-  span:last-child {
-    top: 17px;
-    width: 14px;
-    transform: scaleX(1);
-    opacity: 1;
-  }
-
-  &:hover {
+.hamburger {
+  &-menu {
+    width: 2rem;
+    height: 1.5rem;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
-    span {
-      animation: menu-hover 0.3s forwards cubic-bezier(0, 0, 0.2, 1) 1;
+
+    & span {
+      display: block;
+      position: absolute;
+      height: 0.1rem;
+      width: 100%;
+      background: $color-black;
+      border-radius: 0.9rem;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
     }
-    span:nth-child(2) {
-      animation-delay: 0.1s;
+
+    & span:nth-child(1) {
+      top: 0;
     }
-    span:last-child {
-      animation-delay: 0.2s;
+
+    & span:nth-child(2) {
+      top: 0.7rem;
+    }
+
+    & span:nth-child(3) {
+      top: 1.4rem;
+    }
+  }
+
+  &-nav {
+    width: 50%;
+    height: 0vh;
+    background-color: $color-white;
+    margin-left: auto;
+    margin-top: 15vh;
+    transition: all 0.7s;
+    @include respond(tab-land) {
+      margin-top: 10vh;
+    }
+    @include respond(phone) {
+      width: 100%;
+    }
+    &__links {
+      display: none;
+      margin-left: auto;
+      transition: all 0.5s;
+      padding-right: 8%;
+
+      &--item {
+        text-align: right;
+        font-size: $large-font-size;
+        font-weight: 500;
+        padding-top: 5vh;
+      }
     }
   }
 }
+.open span:nth-child(1) {
+  top: 0.7rem;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
 
-@keyframes menu-hover {
-  60% {
-    transform: scaleX(1.4);
-  }
-  100% {
-    transform: scaleX(1);
-  }
+.open span:nth-child(2) {
+  opacity: 0;
+  left: -6rem;
+}
+
+.open span:nth-child(3) {
+  top: 0.7rem;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }

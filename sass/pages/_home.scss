@@ -47,6 +47,11 @@
   }
 }
 .section-hero {
+  margin-top: 15vh;
+  @include respond(tab-land) {
+    margin-top: 10vh;
+  }
+
   .hero {
     &-grid {
       display: grid;
