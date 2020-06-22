@@ -63,7 +63,10 @@
       margin-left: auto;
       transition: all 0.5s;
       padding-right: 8%;
-
+      @include respond(phone) {
+        //  padding-right: 1.5%;
+        padding-right: 4%;
+      }
       &--item {
         text-align: right;
         font-size: $large-font-size;

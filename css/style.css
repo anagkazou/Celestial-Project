@@ -230,6 +230,9 @@ strong {
     margin-left: auto;
     transition: all 0.5s;
     padding-right: 8%; }
+    @media only screen and (max-width: 37.5em) {
+      .hamburger-nav__links {
+        padding-right: 4%; } }
     .hamburger-nav__links--item {
       text-align: right;
       font-size: 3.3rem;
